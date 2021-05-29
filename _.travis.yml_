@@ -1,0 +1,6 @@
+language: java
+
+# We can specify a list of JDKs to be used for testing
+
+jdk:
+ - openjdk11
