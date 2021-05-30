@@ -8,3 +8,14 @@ jdk:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
+deploy:
+  provider: releases
+  file_glob: true
+  skip_cleanup: true
+  api_key: $GITHUB_TOKEN
+  file:
+    - src/main/java/io/github/kreattang/Travis_CI_Tutorial/trityp.java
+  on:
+    tags: true
+    branch: tag
+    repo: kreattang/Travis_CI_Tutorial
