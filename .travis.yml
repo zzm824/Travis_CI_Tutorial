@@ -10,7 +10,7 @@ deploy:
   skip_cleanup: true
   api_key: $GITHUB_TOKEN
   file:
-    - src/main/java/io/github/kreattang/Travis_CI_Tutorial/trityp.java
+    - .travis.yml
   on:
     tags: true
     branch: tag
