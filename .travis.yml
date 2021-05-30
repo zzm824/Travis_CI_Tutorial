@@ -5,7 +5,6 @@ language: java
 jdk:
  - openjdk11
 
-
 deploy:
   provider: releases
   file_glob: true
