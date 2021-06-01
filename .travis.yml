@@ -20,3 +20,6 @@ deploy:
     branch: tag
     repo: zzm824/Travis_CI_Tutorial
 
+notifications:
+ email:
+   - zzm824@qq.com
