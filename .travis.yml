@@ -4,3 +4,6 @@ language: java
 # We can specify a list of JDKs to be used for testing
 jdk:
  - openjdk11
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
