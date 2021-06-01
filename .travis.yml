@@ -7,3 +7,16 @@ jdk:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: releases
+  file_glob: true
+  skip_cleanup: true
+  api_key: $GITHUB_TOKEN
+  file:
+    - .travis.yml
+  on:
+    tags: true
+    branch: tag
+    repo: zzm824/Travis_CI_Tutorial
+
